@@ -18,17 +18,21 @@ function Form(props) {
         setCount(count => count / 2);
       };
     return(
-        <div>
-        
+      <div className='container'>
             <h1>Count = {count}</h1>
-        <div className="buttons">
-            <button className="btn third" onClick={handleIncrement}>+</button>
-            
-            <button className="btn third" onClick={handleDecrement}>-</button>
-
-            <button className="btn third" onClick={handleDeDevision}>/</button>
-            <br></br>
-            <button className="btn fourth" onClick={() => setCount(0)}>Reset</button>
+        <div className="buttons row">
+            <div className="col">
+              <button className="btn third" onClick={handleIncrement}>+</button>
+            </div>
+            <div className="col">
+              <button className="btn third" onClick={handleDecrement}>-</button>
+            </div>
+            <div className="col">
+              <button className="btn third" onClick={handleDeDevision}>/</button>
+            </div>
+            <div className="col">
+              <button className="btn fourth" onClick={() => setCount(0)}>Reset</button>
+            </div>
         </div>
             
         </div>

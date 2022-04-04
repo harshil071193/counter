@@ -3,7 +3,7 @@ class Nav extends React.Component{
     
     render(){
         return(
-            <div>
+            <div className='container'>
                 <nav>
                     <div class="logo">Counter</div>
                 </nav>
